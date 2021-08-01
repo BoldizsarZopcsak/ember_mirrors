@@ -48,6 +48,6 @@ window.addEventListener('DOMContentLoaded', () => {
         document.getElementById("weather").classList.remove("removed")  // Show
 
         weatherBalloon(city)
-        setInterval(weatherBalloon, 300000, city)  // Update weather every 5 min (300000)
+        setInterval(_ => weatherBalloon(city), 300000, city)  // Update weather every 5 min (300000)
     }
 })
